@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{ /* resetando configuraçoes de margen padrão*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+:root{
+    --fonte-destaque: 'Bebas Neue', cursive;
+}
+
+header{
+    position: relative;
+    padding-top: 25px;
+    height: 300px;
+    background-color: #000;
+}
+
+header #titulo{
+    display: flex;
+}
+
+header #listra-principal{
+    height: 15px;
+    background-color: #fefeff;
+    margin-bottom: 5px;
+}
+
+header #listra-esquerda{
+    margin-top: 21px;
+    height: 30px;
+    background-color: #000;
+    border-top: 8px solid #fefeff;
+    border-bottom: 8px solid #fefeff;
+    width: 100%;
+}
+
+header #listra-direita{
+    margin-top: 21px;
+    height: 30px;
+    background-color: #000;
+    border-top: 8px solid #fefeff;
+    border-bottom: 8px solid #fefeff;
+    width: 100%;
+}
+
+#titulo h1{
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -15px;
+    min-width: 490px;
+    color: #fefeff;
+    font-size: 5em;
+    align-items: center;
+    text-align: center;
+}
+
+/* configuraçoes dos links de navegação*/
+
+header a{
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-family: var(--fonte-destaque);
+    background-color: #565656;
+    color: #fefeff;
+}
+
+header a:hover{
+    width: 250px;
+    transition-duration: 0.5s;
+    text-align: center;
+    border: 1px solid #941a1a;
+    background-color: #e12525;
+}
+
+/* configuraçoes da coluna 1*/
+
+#coluna01{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* configuraçoes da coluna 2*/
+
+#coluna02{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+}
+
+#coluna02 li, #coluna01 li{
+    margin: 10px 0;
+}
+
+/* configuraçoes da imagem do escudo*/
+
+header img{
+    position: absolute;
+    left: 43.5vw;
+    bottom: -11%;
+    width: 221px;
+    margin-bottom: -50px;
+}
