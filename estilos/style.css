@@ -26,6 +26,17 @@
     font-family: var(--fonte-padrao);
 }
 
+@media (max-width: 800px){
+    #carteira .card{
+        display: none;
+    }
+
+    #baner, #baner img{
+        
+        display: none;
+    }
+}
+
 body{
 }
 
@@ -100,7 +111,12 @@ header a:hover{
 
 /* configuraçoes da coluna 1*/
 
+#coluna02 li, #coluna01 li{
+    margin: 10px 0;
+}
+
 #coluna01{
+    
     position: absolute;
     left: 0;
     bottom: 0;
@@ -109,24 +125,23 @@ header a:hover{
 /* configuraçoes da coluna 2*/
 
 #coluna02{
+    list-style-type: none;
+    list-style: none;
     position: absolute;
     right: 0;
     bottom: 0;
     text-align: right;
 }
 
-#coluna02 li, #coluna01 li{
-    margin: 10px 0;
-}
-
 /* configuraçoes da imagem do escudo*/
 
-header img{
+#escudo{
     position: absolute;
-    left: 43.5vw;
-    bottom: -11%;
-    width: 221px;
-    margin-bottom: -50px;
+    left: 42.5vw;
+}
+
+#escudo img{
+    width: 14vw;
 }
 
 /* configuração dos baners*/
@@ -138,7 +153,7 @@ header img{
 }
 
 #baner img{
-    width: 100%;
+    max-width: 100%;
     max-height: 373px;
 }
 
@@ -172,10 +187,11 @@ header img{
 main{
     max-width: 1000px;
     margin: auto;
+    padding: 10px;
 }
 
 #titulo-main{
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-bottom: 25px;
 }
 
@@ -246,6 +262,7 @@ main article .imagen-g{ /* imagens grandes*/
 }
 
 #cards{
+    overflow-x: auto;
     width: 100%;
     margin-top: 20px;
     display: flex;
@@ -292,24 +309,22 @@ main article .imagen-g{ /* imagens grandes*/
     border: 3px solid black;
     width: 45%;
     height: 250px;
-    padding: 5px;
     border-radius:5px;
 }
 
 #carteira .card p{
     background-color: var(--branco);
-    margin: -5px -6px -5px -5px;
     border-bottom: 3px solid black;
     font-size: 0.95em;
     font-weight: bold;
     text-align: center;
     text-indent: 0;
+    margin-bottom: 0;
 }
 
 #carteira .card .imagem{
-    margin: -5px -5px -5px -5px;
-    width: 102.5%;
-    height: 85.6%;
+    width: 100%;
+    height: 76.1%;
     background-color: var(--cinza-escuro);
 
 }
