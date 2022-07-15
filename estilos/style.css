@@ -188,6 +188,7 @@ main{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 #titulo-main{
@@ -206,8 +207,13 @@ main{
     text-align: center;
     font-size: 3em;
     letter-spacing: 2px;
-    margin-top: -9px;
+    margin-top: -5px;
     margin-bottom: -12px;
+}
+
+article{
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.204);
+    margin-bottom: 5px;
 }
 
 main article h2{
@@ -370,15 +376,16 @@ main article .imagen-g{ /* imagens grandes*/
 footer{/* confuguração do roodapé*/
     padding: 5px;
     margin-top: 50px;
-    height: 5vh;
+    height: 80px;
     background-color: var(--preto);
     color: var(--branco);
-    text-align: center;
+    line-height: 1.5em;
+    font-size: 0.8em
 }
 
 footer a{
     color: var(--vermelho-claro);
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
