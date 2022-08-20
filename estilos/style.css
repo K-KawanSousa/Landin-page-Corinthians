@@ -30,21 +30,13 @@
     #carteira .card{
         display: none;
     }
-
-    #baner, #baner img{
-        
-        display: none;
-    }
-}
-
-body{
 }
 
 header{
     position: relative;
     padding-top: 25px;
     height: 300px;
-    margin-bottom: 10vh;
+    margin-bottom: 3vw;
     background-color: #000;
 }
 
@@ -136,6 +128,7 @@ header a:hover{
 /* configuraçoes da imagem do escudo*/
 
 #escudo{
+    z-index: 10;
     position: absolute;
     left: 42.5vw;
 }
@@ -144,40 +137,101 @@ header a:hover{
     width: 14vw;
 }
 
-/* configuração dos baners*/
-
-#baner{
-    width: 70vw;
-    height: 395px;
-    margin: 0 auto;
+/* configuração dos baners start */
+.banerSld{
+    position: relative;
+    overflow: hidden;
 }
 
-#baner img{
-    max-width: 100%;
-    max-height: 373px;
+.impt-baner{
+    display: none;
 }
 
-#controle-exibicao{
+.slider{
     display: flex;
-    flex-direction: row;
-    width: min-content;
-    margin: 0 auto;
 }
 
-#controle-exibicao input{
-    appearance: none;
-    background-color: #000;
-    width: 15px;
-    height: 15px;
+.sld-item img{
+    width: 100vw;
+}
+
+.first{
+    transition: .5s;
+}
+
+/* manual controler start */
+.manual-controler{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.manual-ctl-item{
+    padding: 5px;
     border-radius: 50%;
-    margin: 0 5px;
+    border: 2px solid var(--preto);
+    outline: .5px solid var(--branco);
+
     cursor: pointer;
-    border: 1px solid black;
+    transition: .5s;
 }
 
-#controle-exibicao input:checked{
-    background-color: #fefeff;
+.manual-ctl-item:hover{
+    background-color: var(--branco);
 }
+
+#impt-baner-1:checked ~ .manual-controler #manual-ctl-item-1{
+    background-color: var(--preto);
+}
+
+#impt-baner-2:checked ~ .manual-controler #manual-ctl-item-2{
+    background-color: var(--preto);
+}
+
+#impt-baner-3:checked ~ .manual-controler #manual-ctl-item-3{
+    background-color: var(--preto);
+}
+
+#impt-baner-4:checked ~ .manual-controler #manual-ctl-item-4{
+    background-color: var(--preto);
+}
+
+#impt-baner-5:checked ~ .manual-controler #manual-ctl-item-5{
+    background-color: var(--preto);
+}
+
+
+.manual-ctl-item:not(:last-child){
+    margin-right: 1vw;
+}
+
+#impt-baner-1:checked ~ .slider > .first{
+    margin-left: -0vw;
+}
+
+#impt-baner-2:checked ~ .slider > .first{
+    margin-left: -100vw;
+}
+
+#impt-baner-3:checked ~ .slider > .first{
+    margin-left: -200vw;
+}
+
+#impt-baner-4:checked ~ .slider > .first{
+    margin-left: -300vw;
+}
+
+#impt-baner-5:checked ~ .slider > .first{
+    margin-left: -400vw;
+}
+/* manual controler end */
+
+/* configuração dos baners start */
 
 /* configuração da tag main*/
 

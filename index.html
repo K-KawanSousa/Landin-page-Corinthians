@@ -39,16 +39,58 @@
         </nav>
     </header>
 
-    <div id="baner">
-        <img src="imagens/baner-meias.jpg" alt="baner de contrato co a rikan">
-        <div id="controle-exibicao">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+
+    <!-- baner start -->
+    <div class="banerSld">
+
+        <!-- imputs radio start -->
+        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-1" checked>
+        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-2">
+        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-3">
+        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-4">
+        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-5">
+        <!-- imputs radio end -->
+
+        <!-- slider start -->
+        <div class="slider">
+
+            <!-- baners imagens start -->
+            <a href="#" class="sld-item first">
+                <img src="imagens/baners/Corinthians X Palmeras baner.jpg" alt="">
+            </a>
+
+            <a href="#" class="sld-item">
+                <img src="imagens/baners/Hitoria do corinthians baner.jpg" alt="">
+            </a>
+
+            <a href="#" class="sld-item">
+                <img src="imagens/baners/baner-meias.jpg" alt="">
+            </a>
+            
+            <a href="#" class="sld-item">
+                <img src="imagens/baners/Corinthians X Palmeras baner.jpg" alt="">
+            </a>
+
+            <a href="#" class="sld-item">
+                <img src="imagens/baners/Hitoria do corinthians baner.jpg" alt="">
+            </a>
+            <!-- baners imagens end -->
+
         </div>
+        <!-- slider end -->
+
+        <!-- manual controler start -->
+        <div class="manual-controler">
+            <label for="impt-baner-1" class="manual-ctl-item" id="manual-ctl-item-1"></label>
+            <label for="impt-baner-2" class="manual-ctl-item" id="manual-ctl-item-2"></label>
+            <label for="impt-baner-3" class="manual-ctl-item" id="manual-ctl-item-3"></label>
+            <label for="impt-baner-4" class="manual-ctl-item" id="manual-ctl-item-4"></label>
+            <label for="impt-baner-5" class="manual-ctl-item" id="manual-ctl-item-5"></label>
+        </div>
+        <!-- manual controler end -->
+
     </div>
+    <!-- baner end -->
 
     <main>
         <div id="titulo-main">
@@ -137,4 +179,5 @@
         <p>Site crado por <a href="https://www.instagram.com/_kawan.062/" target="_blank">Kawan Sousa</a> para fins de estudo!</p>
     </footer>
 </body>
+<script src="scripts/altomatc-ctrl-baner.js"></script>
 </html>
