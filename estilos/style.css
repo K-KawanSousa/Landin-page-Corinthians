@@ -77,6 +77,7 @@ header #listra-direita{
     font-size: 5em;
     align-items: center;
     text-align: center;
+    user-select: none;
 }
 
 /* configuraçoes dos links de navegação*/
@@ -311,6 +312,11 @@ main article .imagen-g{ /* imagens grandes*/
 #loja button:hover{
     box-shadow: 0px 0px 8px hsla(0, 0%, 0%, 0.3);
 }
+#loja button a{
+    color: var(--branco);
+    font-size: 1.3rem;
+    font-weight: bolder
+}
 
 #loja button p{
     text-align: center;
@@ -430,7 +436,7 @@ main article .imagen-g{ /* imagens grandes*/
 footer{/* confuguração do roodapé*/
     padding: 5px;
     margin-top: 50px;
-    height: 80px;
+    height: 3rem;
     background-color: var(--preto);
     color: var(--branco);
     line-height: 1.5em;
@@ -438,11 +444,13 @@ footer{/* confuguração do roodapé*/
 }
 
 footer a{
-    color: var(--vermelho-claro);
+    color: var(--cinza-claro);
     font-size: 1em;
-    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 footer a:hover{
     color: var(--vermelho);
+    text-decoration: underline;
 }
