@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*roboto*/
 
 :root{
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
     --fonte-subdestaque: 'Montserrat', sans-serif;
     --fonte-padrao: 'Roboto', sans-serif;
 
@@ -327,40 +327,123 @@ main article .imagen-g{ /* imagens grandes*/
     margin: 0 auto;
 }
 
-#cards{
-    overflow-x: auto;
+/* mini loja start */
+.product-list{
     width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content:space-between;
+    padding: 1vw;
+
+
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+
+    overflow-x: scroll;
+
 }
 
-.loja-item{
-    margin: 0 5px;
-    border: 1px solid black;
-    border-radius: 8px;
-    height: 322px;
-    width: 283px;
+.product{
+    background-color: #F6F6F6;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    
+    width: 20vw;
+    cursor: pointer;
+
+    transition: .3s;
 }
 
-.loja-item p{
-    width: 283px;
-    margin: 0px 0 0 -1px;
-    height: 11.2%;
-    border-radius: 0 0 8px 8px;
+.product:not(:last-child){
+    margin-right: .5vw;
+}
+
+.product:hover{
+    border-color: var(--vermelho);
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.img-product{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pdt-title{
     text-align: center;
-    text-indent: 0;
-    font-size: 1.2em;
-    background-color: var(--preto);
-    color: var(--branco)
+
 }
+
+.classification-star{
+    margin: 3% 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.clsfn-star-uni svg{
+    height: 1rem;
+}
+
+.values{
+    margin: 3% 0;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.atual-price{
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+.atual-price:hover{
+    transform: scale(1.1);
+}
+
+.old-price{
+    font-size: .95rem;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    transform: rotate(-25deg)
+}
+
+.old-price::before{
+    content: '';
+    width: 110%;
+    background-color: var(--preto);
+    height: 1px;
+
+    position: absolute;
+    top: 49%;
+    left: 0;
+
+    transform: rotate(-344deg)
+}
+
+.old-price::after{
+    content: '';
+    width: 110%;
+    background-color: var(--preto);
+    height: 1px;
+
+    position: absolute;
+    top: 49%;
+    left: 0;
+
+    transform: rotate(344deg)
+}
+
+/* mini loja end */
 
 #cards img{
     width: 100%;
     border-radius: 8px 8px 0 0;
-}
-
-.loja-item:hover{
 }
 
 #carteira{ /* container de cards de redirecionamento de sites*/
