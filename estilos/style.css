@@ -26,12 +26,6 @@
     font-family: var(--fonte-padrao);
 }
 
-@media (max-width: 800px){
-    #carteira .card{
-        display: none;
-    }
-}
-
 header{
     position: relative;
     padding-top: 25px;
@@ -540,4 +534,39 @@ footer a{
 footer a:hover{
     color: var(--vermelho);
     text-decoration: underline;
+}
+
+@media (max-width: 800px){
+    #carteira .card{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px){
+    .product{
+        width: 25vw;
+    }
+}
+
+@media (max-width: 900px){
+    .product{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 780px){
+    .product{
+        width: 35vw;
+    }
+}
+
+@media (max-width: 660px){
+    .product{
+        /* width: 40vw; */
+    }
+
+
+.old-price{
+    display: none;
+}
 }
