@@ -364,6 +364,10 @@ main article .imagen-g{ /* imagens grandes*/
     z-index: 2;
 }
 
+.product > a{
+    all: unset;
+}
+
 .img-product{
     width: 100%;
     margin: 0 auto;
