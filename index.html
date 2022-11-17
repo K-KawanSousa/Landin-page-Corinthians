@@ -1,361 +1,203 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
-    <title>Corinthians</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asets/css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Kawan Sousa - desenvolvedor de sites</title>
+  </head>
+  <body>
     <header>
-        <div class="listra" id="listra-principal"></div>
-
-        <div id="titulo">
-            <div class="listra" id="listra-esquerda"></div>
-            <h1>Poderoso Timão</h1>
-            <div class="listra" id="listra-direita"></div>
+      <div id="links">
+        <div class="logo">
+          <a href="#">
+            <img src="asets/icons/logotipo.svg" alt="logo kawan sousa" />
+          </a>
         </div>
-
-        <nav id="coluna01">
-            <ul>
-                <li><p class="nav-item1" ><a class="nav-item" href="https://www.corinthians.com.br/futebol/profissional/elenco">Futebol</a></p></li>
-                <li><p class="nav-item2"><a class="nav-item" href="https://www.ingressoscorinthians.com.br/">Ingressos</a></p></li>
-                <li><p class="nav-item3"><a class="nav-item" href="https://www.corinthians.com.br/clube/esportes-terrestres">Modalidades</a></p></li>
-            </ul>
+        <nav>
+          <a href="#projects">projetos</a>
+          <a href="#text">sobre</a>
+          <a href="#contact-section">contato</a>
+          <a href="#skills">skills</a>
         </nav>
-        
-        <div id="escudo">
-            <img src="imagens/escudo-corinthians.png" alt="escudo do corinthians">
+      </div>
+      <div id="content">
+        <div class="wrapper-picture">
+          <!-- usado para que a imagem esteja sempre alinhada com o topo deste elemento -->
+          <picture>
+            <img src="asets/images/image 3.jpg" alt="foto de perfil" />
+          </picture>
         </div>
-
-        <nav id="coluna02">
-            <ul>
-                <li><a href="https://www.corinthians.com.br/clube/historia">História</a></li>
-                <li><a href="https://www.corinthians.com.br/noticias">Noticias</a></li>
-                <li><a href="https://www.corinthians.com.br/imprensa/programacao-de-futebol">Campeonato</a></li>
-            </ul>
-        </nav>
+        <div id="text">
+          <h1>kawan sousa</h1>
+          <p id="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            perspiciatis quas voluptates totam fugit, molestiae in corrupti
+            provident minima corporis ab? Libero aperiam obcaecati quas a,
+            tempora,temporibus deleniti corporis voluptates velit.
+          </p>
+        </div>
+      </div>
     </header>
 
-
-    <!-- baner start -->
-    <div class="banerSld">
-
-        <!-- imputs radio start -->
-        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-1" checked>
-        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-2">
-        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-3">
-        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-4">
-        <input type="radio" class="impt-baner" name="impt-baner" id="impt-baner-5">
-        <!-- imputs radio end -->
-
-        <!-- slider start -->
-        <div class="slider">
-
-            <!-- baners imagens start -->
-            <a href="#" class="sld-item first">
-                <img src="imagens/baners/Corinthians X Palmeras baner.jpg" alt="">
-            </a>
-
-            <a href="#" class="sld-item">
-                <img src="imagens/baners/Hitoria do corinthians baner.jpg" alt="">
-            </a>
-
-            <a href="#" class="sld-item">
-                <img src="imagens/baners/baner-meias.jpg" alt="">
-            </a>
-            
-            <a href="#" class="sld-item">
-                <img src="imagens/baners/Corinthians X Palmeras baner.jpg" alt="">
-            </a>
-
-            <a href="#" class="sld-item">
-                <img src="imagens/baners/Hitoria do corinthians baner.jpg" alt="">
-            </a>
-            <!-- baners imagens end -->
-
-        </div>
-        <!-- slider end -->
-
-        <!-- manual controler start -->
-        <div class="manual-controler">
-            <label for="impt-baner-1" class="manual-ctl-item" id="manual-ctl-item-1"></label>
-            <label for="impt-baner-2" class="manual-ctl-item" id="manual-ctl-item-2"></label>
-            <label for="impt-baner-3" class="manual-ctl-item" id="manual-ctl-item-3"></label>
-            <label for="impt-baner-4" class="manual-ctl-item" id="manual-ctl-item-4"></label>
-            <label for="impt-baner-5" class="manual-ctl-item" id="manual-ctl-item-5"></label>
-        </div>
-        <!-- manual controler end -->
-
-    </div>
-    <!-- baner end -->
-
     <main>
-        <div id="titulo-main">
-            <div class="listra"></div>
-            <h1>sport club corinthians paulista</h1>
-            <div class="listra"></div>
+      <section id="projects">
+        <h2>projetos</h2>
+        <div id="gallery">
+          <div class="wrapper-cover">
+            <a href="netflixcopy.kawandev.online" target="_blank">
+              <img class="cover" id="cover-1" src="asets/images/netflix-cover.jpg" alt="">
+            </a>
+          </div>
+          <div class="wrapper-cover">
+            <a href="corinthians.kawandev.online" target="_blank">
+              <img class="cover" id="cover-2" src="asets/images/corinthians-cover.jpg" alt="">
+            </a>
+          </div>
+          <div class="wrapper-cover">
+            <a href="https://k-kawansousa.github.io/calculadora/" target="_blank">
+              <img class="cover" id="cover-3" src="asets/images/calculator-cover.jpg" alt="">
+            </a>
+          </div>
+          <div class="wrapper-cover">
+            <a href="https://k-kawansousa.github.io/contatForm/" target="_blank">
+              <img class="cover" id="cover-4" src="asets/images/form-cover.jpg" alt="">
+            </a>
+          </div>
+          <div class="wrapper-cover wpr-coming-soon" coming-soon>
+            <img class="cover-coming-soon" id="cover-5" src="asets/images/em-breve.jpg" alt="">
+          </div>
+          <div class="wrapper-cover wpr-coming-soon" coming-soon>
+            <img class="cover-coming-soon" id="cover-6" src="asets/images/em-breve.jpg" alt="">
+          </div>
+          <div class="wrapper-cover wpr-coming-soon" coming-soon>
+            <img class="cover-coming-soon" id="cover-6" src="asets/images/em-breve.jpg" alt="">
+          </div>
+          <div class="wrapper-cover wpr-coming-soon" coming-soon>
+            <img class="cover-coming-soon" id="cover-6" src="asets/images/em-breve.jpg" alt="">
+          </div>
+          <div class="wrapper-cover wpr-coming-soon" coming-soon>
+            <img class="cover-coming-soon" id="cover-6" src="asets/images/em-breve.jpg" alt="">
+          </div>
         </div>
+      </section>
+      <section class="skills" id="skills">
+        <h2>skills</h2>
 
-        <article>
-            <h2>Quem somos?</h2>
-            <p>
-                Sport Club Corinthians Paulista é um clube poliesportivo brasileiro da cidade de São Paulo, capital do estado de São Paulo. Foi fundado como uma equipe de futebol no dia 1 de setembro de 1910 por um grupo de operários do bairro Bom Retiro. Seu nome foi inspirado no Corinthian FC de Londres, que excursionava pelo Brasil.
-            </p>
-            <p>
-                Embora tenha atuado em outras modalidades esportivas ao longo dos anos, seu reconhecimento e suas principais conquistas foram alcançados no futebol.[7] O clube é um dos mais bem sucedidos do Brasil e das Américas nos últimos anos.[8] Sendo o terceiro maior campeão nacional, com onze conquistas.
-            </p>
-        </article>
+        <div class="skill-wrapper">
+          <div class="skill">
+            <img src="asets/icons/canva-ico.svg" alt="canva">
+            <p>canva</p>
+          </div>
+          <div class="skill">
+            <img src="asets/icons/css3-ico.svg" alt="CSS3">
+            <p>CSS 3</p>
+          </div>
+          <div class="skill">
+            <img src="asets/icons/html5-ico.svg" alt="HTML5">
+            <p>HTML 5</p>
+          </div>
+          <div class="skill">
+            <img src="asets/icons/js-ico.svg" alt="java script">
+            <p>javaScript</p>
+          </div>
+          <div class="skill">
+            <img src="asets/icons/figma-ico.svg" alt="figma">
+            <p>figma</p>
+          </div>
+        </div>
+      </section>
 
-        <article>
-            <h2>Arena Corinthians</h2>
-            <p>
-                A Arena Corinthians tem um projeto único se comparado aos grandes estádios do mundo, com uma ideia que foge do lugar-comum. Sem seguir um conceito convencional, a casa alvinegra foi moldada em um formato retangular, que aproxima a torcida do campo de jogo e garante a visibilidade para todos os presentes. A sensação do torcedor é de estar muito perto do que está acontecendo no gramado.
-            </p>
-            <picture>
-                <img class="imagen-g" src="imagens/estadio.jpg" alt="estadio do Corinthians">
-            </picture>
-            <p>
-                O estádio corinthiano possui quatro setores – Norte, Sul, Leste e Oeste –, com duas grandes arquibancadas laterais. No lado leste, foi construído um enorme painel de LED, com 170 metros de largura e 20 metros de altura. Já no Oeste, há um painel de vidro formado por 1.350 peças, em uma área de 240 metros de comprimento por 30 metros de altura.
-            </p>
-
-        </article>
-
-        <div class="product-list">
-            <div class="product">
-                <a href="https://www.shoptimao.com.br/camisa-corinthians-iii-invasoes-1920-torcedor-sn-nike-masculina-preto+branco-HZM-2023-026">
-                <img class="img-product" src="imagens/white-shirt.png" alt="black shirt">
-                <h3 class="pdt-title">Camisa Corinthians III Invasões</h4>
-                
-                <ul class="classification-star">
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#D9D9D9"/>
-                        </svg>
-                    </li>
-                </ul>
-
-                <span class="values">
-                    <div class="atual-price"><h4><sup>R$</sup>129<sup>90</sup></h4></div>
-                    <div class="old-price"><h4><sup>R$</sup>160<sup>90</sup></h4></div>
-                </span>
-            </a>
-            </div>
-
-            <div class="product">
-                <a href="https://www.shoptimao.com.br/camisa-corinthians-iii-invasoes-1920-torcedor-sn-nike-masculina-preto+branco-HZM-2023-026">
-                <img class="img-product" src="imagens/black-shirt.png" alt="black shirt">
-                <h3 class="pdt-title">Camisa Corinthians III Invasões</h4>
-                
-                <ul class="classification-star">
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#D9D9D9"/>
-                        </svg>
-                    </li>
-                </ul>
-
-                <span class="values">
-                    <div class="atual-price"><h4><sup>R$</sup>129<sup>90</sup></h4></div>
-                    <div class="old-price"><h4><sup>R$</sup>160<sup>90</sup></h4></div>
-                </span>
-            </a>
-            </div>
-
-            <div class="product">
-                <a href="https://www.shoptimao.com.br/camisa-corinthians-iii-invasoes-1920-torcedor-sn-nike-masculina-preto+branco-HZM-2023-026">
-                <img class="img-product" src="imagens/white-shirt.png" alt="black shirt">
-                <h3 class="pdt-title">Camisa Corinthians III Invasões</h4>
-                
-                <ul class="classification-star">
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#D9D9D9"/>
-                        </svg>
-                    </li>
-                </ul>
-
-                <span class="values">
-                    <div class="atual-price"><h4><sup>R$</sup>129<sup>90</sup></h4></div>
-                    <div class="old-price"><h4><sup>R$</sup>160<sup>90</sup></h4></div>
-                </span>
-            </a>
-            </div>
-            <div class="product">
-                <a href="https://www.shoptimao.com.br/camisa-corinthians-iii-invasoes-1920-torcedor-sn-nike-masculina-preto+branco-HZM-2023-026">
-                <img class="img-product" src="imagens/black-shirt.png" alt="black shirt">
-                <h3 class="pdt-title">Camisa Corinthians III Invasões</h4>
-                
-                <ul class="classification-star">
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#D9D9D9"/>
-                        </svg>
-                    </li>
-                </ul>
-
-                <span class="values">
-                    <div class="atual-price"><h4><sup>R$</sup>129<sup>90</sup></h4></div>
-                    <div class="old-price"><h4><sup>R$</sup>160<sup>90</sup></h4></div>
-                </span>
-            </a>
+      <aside class="contact-me" id="contact-section">
+        <div class="form-wrapper">
+          <h3>contate-me</h3>
+          <form action="#" class="contact-form">
+            <div class="form-item" id="form-name">
+              <div class="form-field">
+                <label for="npt-name" class="form-lbl " id="lbl-name">nome*</label>
+                <input type="text" class="form-npt" id="npt-name">
+                <div class="border border-tp1 border-top"></div>
+                <div class="border border-tp1 border-right"></div>
+                <div class="border border-tp1 border-bottom"></div>
+                <div class="border border-tp1 border-left"></div>
+              </div>
+              <div class="field-error" id="field-error-name">não são aceitos caracteres especiais no nome!</div>
             </div>
             
-            <div class="product">
-                <a href="https://www.shoptimao.com.br/camisa-corinthians-iii-invasoes-1920-torcedor-sn-nike-masculina-preto+branco-HZM-2023-026">
-                <img class="img-product" src="imagens/white-shirt.png" alt="black shirt">
-                <h3 class="pdt-title">Camisa Corinthians III Invasões</h4>
-                
-                <ul class="classification-star">
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#000000"/>
-                        </svg>
-                    </li>
-                    <li class="clsfn-star-uni">
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#D9D9D9"/>
-                        </svg>
-                    </li>
-                </ul>
-
-                <span class="values">
-                    <div class="atual-price"><h4><sup>R$</sup>129<sup>90</sup></h4></div>
-                    <div class="old-price"><h4><sup>R$</sup>160<sup>90</sup></h4></div>
-                </span>
-            </a>
+            <div class="form-item" id="form-mail">
+              <div class="form-field">
+                <label for="npt-mail" class="form-lbl " id="lbl-mail">e-mail*</label>
+                <input type="text" class="form-npt" id="npt-mail">
+                <div class="border border-tp2 border-top"></div>
+                <div class="border border-tp2 border-right"></div>
+                <div class="border border-tp2 border-bottom"></div>
+                <div class="border border-tp2 border-left"></div>
+              </div>
+              <div class="field-error" id="field-error-mail">formato de e-mail inválido!</div>
             </div>
+            
+            <div class="form-item" id="form-subject">
+              <div class="form-field">
+                <label for="npt-subject" class="form-lbl " id="lbl-subject">assunto*</label>
+                <input type="text" class="form-npt" id="npt-subject">
+                <div class="border border-tp3 border-top"></div>
+                <div class="border border-tp3 border-right"></div>
+                <div class="border border-tp3 border-bottom"></div>
+                <div class="border border-tp3 border-left"></div>
+              </div>
+              <div class="field-error" id="field-error-subject">minimo de 7 caracteres neste campo!</div>
+            </div>
+            
+            <div class="form-item" id="form-text">
+              <div class="form-field">
+                <label for="npt-text" class="form-lbl " id="lbl-text">mensagem*</label>
+                <textarea name="" class="form-npt" id="npt-text" cols="30" rows="100"></textarea>
+                <div class="border border-tp4 border-top"></div>
+                <div class="border border-tp4 border-right"></div>
+                <div class="border border-tp4 border-bottom"></div>
+                <div class="border border-tp4 border-left"></div>
+              </div>
+              <div class="field-error" id="field-error-text">minimo de 30 caracteres no texto!</div>
+            </div>
+
+            <div class="form-item" id="form-submit">
+              <input type="submit" class="form-npt" id="npt-submit">
+              <div class="field-error" id="field-error-submit">verifique se os campos e tente novamente</div>
+            </div>
+          </form>
+
+          <div class="social-network-wrpr">
+            <a href="https://www.instagram.com/_kawan.062/" target="_blank"  class="social-network">
+              <img src="asets/icons/instagram-ico.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/kawan-sousa-alves-b13108251/" target="_blank" class="social-network">
+              <img src="asets/icons/linkedin-ico.svg" alt="">
+            </a>
+            <a href="#" target="_blank" class="social-network">
+              <img src="asets/icons/whatsapp-ico.svg" alt="">
+            </a>
+            <a href="https://github.com/K-KawanSousa" target="_blank" class="social-network">
+              <img src="asets/icons/github-ico.svg" alt="">
+            </a>
+          </div>
         </div>
 
-        <aside>
-            <div id="carteira">
-                
-                <div class="card">
-                    <p>Gigantescas movitamentaçoes de torcedores do Corinthians para assistir jogos em outros países.</p>
-                    <div class="imagem">
-                        <img src="imagens/invasoes.jpg" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <p>Gigantescas movitamentaçoes de torcedores do Corinthians para assistir jogos em outros países.</p>
-                    <div class="imagem">
-                        <img src="imagens/invasoes.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <aside id="redes-sociais">
-            <p>Siga-nos</p>
-            <div id="icones">
-                <a href="https://www.instagram.com/corinthians/" target="_blank"><img src="imagens/icones/svgexport-32.svg" alt="icone de intagran" class="icone-aside" ></a>
-                <a href="https://twitter.com/Corinthians" target="_blank"><img src="imagens/icones/svgexport-33.svg" alt="icone twitter" class="icone-aside"></a>
-                <a href="https://pt-br.facebook.com/corinthians/" target="_blank"><img src="imagens/icones/svgexport-34.svg" alt="icone facebook" class="icone-aside"></a>
-                <a href="https://www.youtube.com/c/corinthians" target="_blank"><img src="imagens/icones/youtube.svg" alt="icone youtube" class="icone-footer"></a>
-            </div>
-
-        </aside>
+        <div class="contact-image">
+          <img src="asets/images/contact-perfil.jpg" alt="kawan sousa">
+        </div>
+      </aside>
     </main>
     <footer>
-        <p>Sport Club Corinthians Paulista</p>
-        <p>Desenvolvido por <a href="https://www.instagram.com/_kawan.062/" target="_blank">Kawan Sousa</a></p>
+      <div class="logotipo">
+        <img src="asets/icons/logotipo.svg" alt="assinatura">
+      </div>
+
+      <div class="copy-alert" id="ftr-copy-alert">&copy; 2022 kawandev.online - premium front end developer</div>
     </footer>
-</body>
-<script src="scripts/altomatc-ctrl-baner.js"></script>
+  </body>
+  <script src="asets/script/projects.js"></script>
+  <script src="asets/script/contact.js"></script>
+  <script src="asets/script/main.js"></script>
 </html>
